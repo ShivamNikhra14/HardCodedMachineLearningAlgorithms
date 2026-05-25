@@ -7,7 +7,7 @@ class LinearRegression:
     def fit(self, train: pd.DataFrame, target: pd.DataFrame, learning_rate = 0.01, iterations = 1000):
         """
         I am assuming that the data will be all numerical, not categorical.
-        It will stored in the train dataframe, and target dataframe.
+        It will be stored in the train dataframe, and target dataframe.
         'train' will be containing the training data without the target column.
         'target' will be containing the target column.
         We are using MSE as the cost function.
