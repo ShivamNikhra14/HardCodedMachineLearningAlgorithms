@@ -1,2 +1,8 @@
 # HardCodedMachineLearningAlgorithms
 This repository features my attempts towards learning and coding well known machine learning algorithms as I learn Data Science. These might not be perfect, but I think the effort counts and so does my learning.
+
+
+
+Algorithms learned so far: 
+1. Linear Regression
+2. Logistic Regression
