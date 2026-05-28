@@ -6,7 +6,7 @@ class LogisticRegression:
         self.slope: np.ndarray | None = None
         self.intercept: float | None = None
 
-    def fit(self, train: pd.DataFrame, test: pd.DataFrame, learning_rate = 0.01, iterations = 1000):
+    def fit(self, train: pd.DataFrame, target: pd.DataFrame, learning_rate = 0.01, iterations = 1000):
         """
         I am assuming that the data will be all numerical, not categorical.
         It will be stored in the train dataframe, and target dataframe.
@@ -16,7 +16,7 @@ class LogisticRegression:
         We'll be using gradient descent for loss optimization.
         """
         X = train.values
-        y = test.values.reshape(-1,1)
+        y = target.values.reshape(-1,1)
 
         n, m = X.shape
 
